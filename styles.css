@@ -11,8 +11,8 @@ body {
 }
 
 header {
-  max-height: 500px;
-  color: black;
+  max-height: 2000px;
+  color: black !important;
 }
 
 .mainImage{
