@@ -86,12 +86,34 @@
         </div> 
         <div class="input-fields">
           <label for="phone">Phone:</label>
-          <input type="text" name="phone" id="phone" />
+          <input type="tel" name="phone" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" />
         </div> 
         <div class="input-fields">
           <label for="Comments">Comments/Feedback:</label>
           <textarea name="comments" id="comments" rows="5" cols="33"></textarea>
         </div> 
+        <div class="input-fields">
+          <!-- DEMO INPUT TYPES-->
+          <input type="password" />
+          <input type="date" />
+          <input type="time" />
+          <input type="number" />
+          <input type="range" min="0" max="10" />
+          <input type="url" />
+          <input type="search" name="google" />
+          <br/>
+          <input type="checkbox" name="option1" value="BSCS">BSCS more-info-request
+          <br/>
+          <input type="checkbox" name="option1" value="BSWD">BSWD more-info-request
+          <br/>
+          <input type="checkbox" name="option1" value="BSGD">BSGD more-info-request
+          <br/>
+          <p>Which Stock should I buy with my next paycheck?</p>
+          <input type="radio" name="Which stock should I buy?" value="American Airlines">American Airlines
+          <input type="radio" name="Which stock should I buy?" value="Delta">Delta
+          <input type="radio" name="Which stock should I buy?" value="boeing">Boeing
+
+          
         <div class="input-fields">
             <input type="submit" value="Submit" />
             </div>
