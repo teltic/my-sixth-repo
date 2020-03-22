@@ -1,0 +1,41 @@
+h1 {
+  color: yellow; background-color: black;
+}
+
+
+h2 {
+  color: white; background-color: grey;
+}
+
+h4 {
+  color: brown
+}
+
+.Common-Header-Style{
+  font-family: 'Courier New', Courier, monospace;
+}
+
+ul#main-nav{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333333;
+}
+
+ul#main-nav li{
+  float:left;
+}
+
+ul#main-nav li a{
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul#main-nav li a:hover {
+  background-color: #111111;
+  
+}
