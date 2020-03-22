@@ -1,5 +1,5 @@
 h1 {
-  color: yellow; background-color: black;
+  color: blue;
 }
 
 
@@ -13,6 +13,10 @@ h4 {
 
 .Common-Header-Style{
   font-family: 'Courier New', Courier, monospace;
+}
+
+#mian-nav{
+  color: purple;
 }
 
 ul#main-nav{
@@ -38,4 +42,64 @@ ul#main-nav li a{
 ul#main-nav li a:hover {
   background-color: #111111;
   
+}
+
+div[title]{
+  border: 1px solid black;  
+  margin: 10px 0px;
+  padding: 5px;  
+}
+
+div[title="website-info"]{
+  background-color: beige;
+}
+
+/* Decendent Combinator -- This will look at all levels. */
+ol.deploy-times li{
+  border: 1px dashed red;
+}
+
+/* Child Combinator -- This will only take 1st level.  Will not look at all levels */
+ol.deploy-times > li {
+  border: 1px solid blue;
+}
+
+/* Adjacent Sibling Combinator -- Will make the change on the first P... Not any other */
+h1 + p {
+  background-color: aqua;
+}
+
+/* General Sibling Combinator */
+h2 ~ p {
+  background-color: bisque;
+}
+
+/* First Child Example.
+ul li:first-child{
+  background-color: tan
+} */ 
+
+/* Last Child Example. 
+ul li:last-child{
+  background-color: orange;
+} */
+
+/* Not example.
+*:not(p){
+  background-color: orchid;
+} */
+
+/* ::before example -- Being able to change things before element */
+p.pre-text::before {
+  content: "IMPORTANT >";
+  color: red
+}
+p.post-text::before {
+  content: "Boring >";
+  color: green
+}
+/* Making changes when someone highlights */
+p::selection{
+  color: maroon;
+
 }
